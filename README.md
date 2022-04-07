@@ -23,15 +23,20 @@ E.g. from firewalls but do not want to expose the production data on a
 test system. This way you can protect an organization's 
 identity at the same time.
 
-Caveats: 
+DEPENDENCIES
+
+Needs netaddr-ip module for perl. E.g. on Ubuntu 20.04:
+
+    sudo apt install libnetaddr-ip-perl
+
+CAVEATS 
 
 - currently only implemented for IPv4
 
 - beware of anonymizing common strings; e.g. "INT" when handling database dumps is part of keyword CONSTRAINT
   use slightly longer strings like "INT_" instead
 
-Params:
-
+PARAMETERS
 - The network range used for replacement, is set to "10.0.0.0/8" if omitted.
 
 - For each file <infile> supplied an anonymized file called 
