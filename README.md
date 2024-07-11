@@ -25,9 +25,10 @@ identity at the same time.
 
 DEPENDENCIES
 
-Needs netaddr-ip module for perl. E.g. on Ubuntu 20.04:
+Needs netaddr-ip and cgi modules for perl. E.g. on Ubuntu 22.04:
 
-    sudo apt install libnetaddr-ip-perl
+     sudo apt install libcgi-pm-perl
+     sudo apt install libnetaddr-ip-perl
 
 CAVEATS 
 
