@@ -105,8 +105,8 @@ sub show_help {
 	print ("-remove-keys=1 : optional, removes keys, certificates and passwords/hashes appearig in config files in common formats \n");
 	print ("<infile1> <infile2> ... <infilen> : list of files to anonymize\n\n");
 	print ("Example:\n");
-	print ("cactus-anonymizer -txt-subst-file=subst-strings.txt -net=192.168.88.0/24 file1.cfg file2.cfg file3.cfg\n\n");
-	print ("DEPENDENCIES (ubuntu 22.04): libcgi-pm-perl, libnetaddr-ip-perl, see README.md for more information")
+	print ("cactus-anonymizer -txt-subst-file=subst-strings.txt -net=192.168.88.0/24 file1.cfg file2.cfg file3.cfg\n");
+	print ("DEPENDENCIES (ubuntu 22.04): libcgi-pm-perl, libnetaddr-ip-perl, see README.md for more information\n\n");
 }
 
 sub anonymize {
